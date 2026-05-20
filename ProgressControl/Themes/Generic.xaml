@@ -1,13 +1,14 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="clr-namespace:ProgressViewSample.Controls">
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ProgressControl">
 
     <BooleanToVisibilityConverter x:Key="BoolToVis"/>
 
-    <Style TargetType="{x:Type controls:ProgressOverlay}">
+    <Style TargetType="{x:Type local:ProgressOverlay}">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type controls:ProgressOverlay}">
+                <ControlTemplate TargetType="{x:Type local:ProgressOverlay}">
                     <Border x:Name="PART_ProgressBorder"
                             Background="#CC000000"
                             Visibility="{TemplateBinding IsProgressVisible, Converter={StaticResource BoolToVis}}">
@@ -25,7 +26,7 @@
                                          Margin="5"/>
 
                             <Button x:Name="PART_CancelButton" 
-                                    Content="취소"
+                                    Content="Cancel"
                                     Width="80" 
                                     Height="30" 
                                     Margin="5"/>

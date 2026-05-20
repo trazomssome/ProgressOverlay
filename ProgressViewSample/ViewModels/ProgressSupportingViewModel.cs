@@ -1,5 +1,5 @@
-﻿using ProgressViewSample.Infrastructure;
-using ProgressViewSample.Interfaces;
+﻿using ProgressControl.Interfaces;
+using ProgressViewSample.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;

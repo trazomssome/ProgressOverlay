@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 
 
-namespace ProgressViewSample.Interfaces
+namespace ProgressControl.Interfaces
 {
     public interface IProgressSupportingViewModel : INotifyPropertyChanged
     {

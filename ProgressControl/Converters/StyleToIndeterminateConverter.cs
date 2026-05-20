@@ -1,4 +1,4 @@
-﻿using ProgressViewSample.Interfaces;
+﻿using ProgressControl.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace ProgressViewSample.Converters
+namespace ProgressControl.Converters
 {
     public class StyleToIndeterminateConverter : IValueConverter
     {
