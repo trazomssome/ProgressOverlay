@@ -24,6 +24,8 @@ namespace ProgressViewSample.ViewModels
             {
                 StartIndeterminate("데이터 로딩 준비 중...");
 
+                await Task.Delay(500);
+
                 var items = await FetchDataWithProgressAsync();
 
                 EndProgress();
