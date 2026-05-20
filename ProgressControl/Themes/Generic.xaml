@@ -21,6 +21,8 @@
                                        Margin="5"/>
 
                             <ProgressBar Height="30" 
+                                         Minimum="0"
+                                         Maximum="1"
                                          Value="{TemplateBinding ProgressValue}"
                                          IsIndeterminate="False"
                                          Margin="5"/>
