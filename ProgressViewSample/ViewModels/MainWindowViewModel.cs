@@ -23,12 +23,10 @@ namespace ProgressViewSample.ViewModels
             try
             {
                 StartIndeterminate("데이터 로딩 준비 중...");
-                await Task.Delay(500); // 준비 작업
 
                 var items = await FetchDataWithProgressAsync();
 
                 EndProgress();
-                MessageBox.Show($"완료: {items.Count}개 항목 로드됨");
             }
             catch (Exception ex)
             {
