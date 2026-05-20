@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProgressViewSample"
-        xmlns:userControls="clr-namespace:ProgressViewSample.UserControls"
+        xmlns:controls="clr-namespace:ProgressViewSample.Controls"
         xmlns:viewModels="clr-namespace:ProgressViewSample.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -21,6 +21,11 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"/>
         
-        <userControls:ProgressOverlay DataContext="{Binding}" />
+        <controls:ProgressOverlay 
+            IsProgressVisible="{Binding IsProgressVisible}"
+            ProgressValue="{Binding ProgressValue}"
+            ProgressMessage="{Binding ProgressMessage}"
+            ProgressStyle="{Binding ProgressStyle}"
+            DismissCommand="{Binding DismissProgressCommand}" />
     </Grid>
 </Window>
