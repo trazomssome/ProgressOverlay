@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProgressControl\ProgressControl.csproj" />
+    <Reference Include="ProgressControl">
+      <HintPath>..\ProgressControl\bin\Debug\net9.0-windows\ProgressControl.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

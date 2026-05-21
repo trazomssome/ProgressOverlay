@@ -4,13 +4,4 @@
         <UseWPF>true</UseWPF>
         <ImplicitUsings>disable</ImplicitUsings>
 	</PropertyGroup>
-	
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
-		<DefineConstants>NETFRAMEWORK</DefineConstants>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0-windows'">
-		<DefineConstants>NET9_0</DefineConstants>
-	</PropertyGroup>
-	
 </Project>
