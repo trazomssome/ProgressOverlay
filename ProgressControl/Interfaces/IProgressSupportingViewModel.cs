@@ -17,10 +17,10 @@ namespace ProgressControl.Interfaces
 
         ICommand DismissProgressCommand { get; }
 
-        void UpdateProgress(int current, int total, string? message = null);
+        void UpdateProgress(int current, int total, string message = null);
 
         // 프로그레스 시작 (Indeterminate)
-        void StartIndeterminate(string? message = null);
+        void StartIndeterminate(string message = null);
 
         // 프로그레스 종료
         void EndProgress();

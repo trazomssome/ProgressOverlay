@@ -1,10 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net472;net9.0-windows</TargetFrameworks>
+        <UseWPF>true</UseWPF>
+        <ImplicitUsings>disable</ImplicitUsings>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
+		<DefineConstants>NETFRAMEWORK</DefineConstants>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0-windows'">
+		<DefineConstants>NET9_0</DefineConstants>
+	</PropertyGroup>
+	
 </Project>
